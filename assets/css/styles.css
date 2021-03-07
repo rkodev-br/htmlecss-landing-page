@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: rgb(24, 24, 24);
+}
+
+header {
+    min-height: 15vh;
+}
+
+.logo img {
+    display: block;
+    width: 15vh;
+    margin: 2vh 15px;
+}
+
+.container {
+    min-height: 83vh;
+    margin: 0;
+    padding: 0;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    padding: 0 10%;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+.yellow {
+    color: rgb(255, 226, 6);
+}
+
+.input-item {
+    margin: 10px;
+}
+
+.input-item label,
+.input-item input,
+.input-item button {
+    width: 100%;
+    margin: 5px;
+}
+
+.input-item input,
+.input-item button {
+    padding: 12px 6px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-item input {
+    border: 1px solid rgb(46, 46, 46);
+    background: rgb(46, 46, 46);
+    color: white;
+}
+
+.input-item input:focus {
+    border: 1px solid rgb(80, 80, 80);
+    background: rgb(80, 80, 80);
+    color: white;
+    transition: 0.25s all;
+}
+
+.primary {
+    border: 1px solid  rgb(153, 135, 0);
+    background-color: rgb(153, 135, 0);
+    color: rgb(204, 204, 204);
+}
+
+.primary:hover {
+    border: 1px solid  rgba(153, 135, 0, 0.178);
+    background-color: rgba(153, 135, 0, 0.178);
+    color: white;
+    transition: 0.25s all;
+}
+
+.item {
+    margin: auto;
+}
+
+@media all and (max-width: 800px) {
+    h1 {
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .item {
+        margin: 75px auto;
+    }
+}
